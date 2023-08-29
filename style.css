@@ -1,0 +1,130 @@
+
+body{
+   height: 100vh;
+   display: flex;
+   background-color: black;
+   justify-content: center;
+   align-items: center;
+   transform: scaleX(3);
+}
+
+div{
+   border-radius: 50%;
+   justify-content: center;
+
+   display: flex;
+}
+
+#sun-gravity{
+   border-color: rgb(255, 255, 164);
+   width: 300px;
+   height: 300px;
+   animation: rotate 10s linear infinite;
+   
+} 
+
+#earth-gravity{
+   border-color: rgb(174, 174, 255);
+   width: 30%;
+   height: 30%;
+   animation: rotate 10s linear infinite;
+}
+
+
+#mercury-gravity{
+   width: 15%;
+   height: 15%;
+   border: inset;
+   border-width: 10px;
+   margin-left: 200px;
+}
+
+#sun{
+   background-color: yellow;
+   width: 200px;
+   height: 200px;
+   transform: scaleX(0.333);
+   align-self: center;
+   justify-self: center;
+   position: absolute;
+   box-shadow: 0px 0px 20px red,
+               0px 0px 70px rgb(255, 60, 0),
+               0px 0px 50px red;
+
+   animation: counterRotate 10s linear infinite;
+}
+
+#earth{
+   background-color: blue;
+   width: 100px;
+   height: 100px;
+   align-self: center;
+   justify-self: center;
+   transform: scaleX(0.333);
+   position: absolute;
+   animation: counterRotate 5s linear infinite;
+}  
+
+#moon {
+   background-color: grey;
+   width: 30px;
+   height: 30px;
+   transform: scaleX(0.333);
+   animation: counterRotate 5s linear infinite;
+   
+}
+
+#mercury{
+   background-color: grey;
+   width: 50px;
+   height: 50px;
+   transform: scaleX(0.333);
+   position: absolute;
+   align-self: center;
+   justify-self: center;
+   animation: counterRotate 10s linear infinite;
+}
+
+@keyframes rotate{
+   0% {
+      rotate: 0deg;
+   }
+   100% {
+      rotate: 360deg;
+   }
+}
+
+@keyframes counterRotate{
+   0% {
+      rotate: 360deg;
+   }
+   100% {
+      rotate: 0deg;
+   }
+}
+
+@keyframes counterRotate2{
+   0% {
+      rotate: 360deg;
+   }
+   100% {
+      rotate: 0deg;
+   }
+}
+
+#planet3{
+   background-color: red;
+   width: 75px;
+   height: 75px;
+   transform: scaleX(0.333);
+   position: absolute;
+   align-self: center;
+   justify-self: center;
+   animation: counterRotate 10s linear infinite;
+}
+
+#planet3-g{
+   width: 15%;
+   height: 15%;
+   margin-top: 200px;
+}
